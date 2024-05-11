@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MUNCHIEMASCOT</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-cover" style="background-image: url('layered-waves-haikei.svg');">
+  <div id="app" class="h-screen w-screen flex flex-col items-center justify-between bg-white-300/10">
+    <div class="flex items-stretch justify-stretch border-b border-yellow-900/20 w-full">
+      <div class="flex items-center justify-center w-full max-w-[1280px] md:mx-auto py-2 px-4">
+        <img src="icontop.png" class="h-16" alt="logo">
+        <div class="flex-grow"></div>
+        <button class="transition-all bg-slate-700 px-2 py-1 flex items-center rounded-md pt-1 text-white space-x-2"
+          id="signout-button">
+          <p class="transition-all">Sign Out</p>
+          <span class="material-symbols-outlined">
+            logout
+          </span>
+        </button>
+      </div>
+    </div>
+    <div id="getting_started_container"
+      class="w-full flex-grow overflow-y-auto overflow-x-hidden flex flex-col space-y-3 scroll-smooth px-4 pb-5 items-center justify-center">
+      <img src="iconfull-tl.png" class="w-[150px]" alt="logo">
+      <p class="text-3xl font-bold font-hype">How can I help you today?</p>
+    </div>
+    <div id="chat_container"
+      class="w-full flex-grow overflow-y-auto overflow-x-hidden flex-col space-y-3 scroll-smooth px-4 pb-5 hidden">
+
+    </div>
+
+    <form class="w-[96%] max-w-[1280px] mb-[2%] md:mx-auto bg-transparent flex">
+      <textarea name="prompt" rows="1" cols="1" placeholder="What's cooking?"
+        class="w-full placeholder:text-slate-700 text-blue-950 text-lg px-6 py-3 bg-white/90 focus:bg-blue-50 transition-all rounded-l-xl border-none outline-none resize-none peer"></textarea>
+      <button type="submit" id="form-button"
+        class="transition-all bg-blue-700/70 peer-focus:bg-blue-700 px-4 flex items-center rounded-r-xl group pt-1 text-white">
+        <p class="group-hover:w-12 group-hover:mr-1 mr-0 overflow-hidden w-0 transition-all text-lg">Send</p>
+        <span class="material-symbols-outlined">
+          arrow_forward
+        </span>
+      </button>
+    </form>
+  </div>
+  <p
+    class="hidden capitalize font-semibold text-2xl  space-x-1 text-sm px-2  gap-2 whitespace-nowrap list-inside flex-wrap bg-black/20 list-disc">
+  </p>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
